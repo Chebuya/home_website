@@ -6,6 +6,7 @@
     <title>awwwwwww</title>
     <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <meta name="color-scheme" content="dark">
     <link href="https://fonts.cdnfonts.com/css/print-clearly" rel="stylesheet">
   </head>
   <body>
@@ -21,9 +22,19 @@ Currently living in Russia (Moscow)
 Discord: Chebuya#0604
     </div>
     <script>
-      if (document.querySelector('meta[name="darkreader"]')) {
-        document.body.style.background = "none";
-      }
+        const head = document.querySelector('head');
+
+        function handleMutation() {
+          const darkreaderSelector = 'meta[name="darkreader"]';
+          if (head.querySelector(darkreaderSelector)) {
+            document.body.style.background = "none";
+            console.log("амогус")
+          };
+        };
+
+        handleMutation();
+        
+        new MutationObserver(handleMutation).observe(head, { childList: true });
     </script>
   </body>
 </html>
