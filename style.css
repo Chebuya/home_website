@@ -36,16 +36,18 @@ html, body {
 
 #hosted_by_img {
   position: sticky;
-  width: 21px;
-  height: 21px;
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
   float: left;
 }
 
 #hosted_by_text {
   font-family: 'Print Clearly', sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   float: left;
   margin: 0;
+  margin-top: 7px;
   margin-right: 5px;
   color: #ffffff;
 }
