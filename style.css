@@ -20,7 +20,6 @@ html, body {
 
 #boymoder {
   position: fixed;
-  /* left: 75.5%; */
   right: 6.5%;
   max-width: 40%;
   bottom: 0;
@@ -37,14 +36,14 @@ html, body {
 
 #powered_by_img {
   position: sticky;
-  width: 24px;
+  width: 21px;
   height: auto;
   float: left;
 }
 
 #powered_by_text {
   font-family: 'Print Clearly', sans-serif;
-  font-size: 20px;
+  font-size: 17px;
   float: left;
   margin: 0;
   margin-right: 5px;
